@@ -1,0 +1,33 @@
+*** Settings ***
+Library    SeleniumLibrary
+
+*** Variables ***
+${URL}           https://example.com/login  # Replace with your login URL
+${USERNAME}      your_username_here         # Replace with a valid username
+${PASSWORD}      your_password_here         # Replace with a valid password
+${BROWSER}       chrome                      # You can use 'chrome', 'firefox', etc.
+
+*** Test Cases ***
+Valid Login Test
+    [Documentation]    This test verifies that a user can log in with valid credentials.
+    [Tags]    login    smoke
+    Open Browser    ${URL}    ${BROWSER}
+    Input Text    id=username_field    ${USERNAME}  # Replace 'username_field' with the actual id of the username input
+    Input Text    id=password_field    ${PASSWORD}  # Replace 'password_field' with the actual id of the password input
+    Click Button    id=login_button      # Replace 'login_button' with the actual id of the login button
+    Wait Until Element Is Visible    id=dashboard    10s  # Replace 'dashboard' with an element that indicates a successful login
+    Page Should Contain    Welcome    # Replace 'Welcome' with text or element specific to your application
+    Close Browser
+
+Invalid Login Test
+    [Documentation]    This test verifies that login fails with invalid credentials.
+    [Tags]    login    smoke
+    Open Browser    ${URL}    ${BROWSER}
+    Input Text    id=username_field    invalid_username
+    Input Text    id=password_field    invalid_password
+    Click Button    id=login_button
+    Wait Until Element Is Visible    id=error_message    10s  # Replace with an element that appears when login fails
+    Page Should Contain    Invalid credentials    # Replace with the expected error message
+    Close Browser
+
+*** Keywords ***
