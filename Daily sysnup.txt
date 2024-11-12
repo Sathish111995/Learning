@@ -1,0 +1,48 @@
+Build Busters- PI24.4 sprint 4
+
+sathish.kamaraj@aletheatech.com
+
+Tharmendran - Lap support hydrebad, India
+
+Learning part 
+CLI,
+linux basic 
+cal commands
+standardalone
+WLAN setup need to understand
+
+11\11\24- Daily standup
+
+PAT -Automation, Config,
+Build Busters- PI24.4 sprint 4
+satya- doing SSLk + config installation  changes using groovy- 
+Shreya- 
+murali- AIL issue, content deploy, triger, load testing.
+Vinoth- update pipeline,
+Tamil- onboard TP71 & TP59 to PAT prod ,canary pipeline, 
+
+Pipeline - Shreya(host)
+
+Remote desktop
+Tamil- PSM, AZU, VR, 
+
+
+12/11/2024
+Karthik aruna will coordinate basic training for components.
+
+vinoth- UPGRADE pipeline support PI 24.4 S4, OTA upgrade
+Tamil- IPTV, cal commands, 
+Murali- AIL, flight duration, flight number, flight ID regression run in prod.
+Satya- Changes In groovy 
+
+Pipeline- satya
+tail id, 
+tail
+BAW(device name ) - Preprod setup
+canary pipeline, IPTV
+
+
+
+
+
+
